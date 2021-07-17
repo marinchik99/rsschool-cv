@@ -10,7 +10,7 @@ body {
 
 header {
     display: flex;
-    background-color: #abdfda;
+    background-color:#abdfda;
     flex-wrap: nowrap;
 }
 .title {
