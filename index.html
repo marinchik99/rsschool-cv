@@ -5,74 +5,132 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>cv-file</title>
-        <link rel="stylesheet" href="/rsschool-cv/css_style/style.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/ocean.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="C:/rsschool/rsschool-cv/css_style/style.css">
     </head>
     
     <body>
             
 <header>
-
+<nav>
+        <ul>
+            <li><a href="#contacts">Contacts </a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>            
+            <li><a href="#english">English</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#code">Code style</a></li>
+            <li><a href="#video">Video</a></li>
+        </ul>            
+    </nav> 
 <div class=title> 
-    <h1 > Marina Nazarenko  </h1> 
    
-<article class="Contacts">
-    <h2 class="Contacts-title"> Contacts: </h2>
-   <ul>
-    <li> <b>mobile:</b> +375 (29) 324-91-94; </li>
-    <li> <b>E-mail:</b> marina_1999@tut.by </li>
+ <img src="C:\rsschool\rsschool-cv\photo\photo.jpeg" alt="photo" class="name"  >
+    
+<article class="Contacts" id="contacts">
+    <h1 > Marina Nazarenko  </h1> 
+    
+   <ul class="contact">
+    <li> <b>Location</b> Minsk, Belarus</li>
+    <li> <b>mobile</b> (29) 324-91-94 </li>
+    <li> <b>E-mail</b> marina_1999@tut.by </li>
+
     </ul> 
+
    </article> 
+   
  </div> 
- <img src="/rsschool-cv/photo/1.png" alt="photo" class="name"  >
+ 
 </header>
 
 <main class="inform">
-<section class="about"> 
+<section class="about" id="about"> 
 <h3 class="about-title"> About me </h3>
 <p>I would like to gain experience in various areas, especially in IT. I am adaptable, ambitios, curious, hard-working and organized.</p>
 </section>
 
-<div class="sum">
-<section class="skills"> 
+
+<section class="skills" id="skills"> 
 <h3 class="skills-title"> Skills </h3>
 <ul> 
-    <li> HTML </li> <li>CSS</li> <li>JS</li> <li>Git</li>
+    <li> HTML </li> <li>CSS</li> <li>JavaScript</li> <li>Git</li>
 </ul>
 </section>
 
-<section>
-<h3> Sample code </h3>
-<pre>
-var shoppingDone = false;
-if (shoppingDone === true) {
-  var childsAllowance = 10; } 
-  else {
-  var childsAllowance = 5; } 
-</pre>
-</section>
-<section class="english">
+<section class="english" id="english">
     <h3 class="english-title"> English</h3>
-    <p> A2 </p>
+    <p> Pre-Intermediate/Intermediate (A2/B1) </p>
 </section>
-</div>
 
-<section class="education">
+
+<section class="education" id="education">
     <h3 class="education-title"> Education </h3> 
- <p>Studied in Belarusian State University of Informatics and Radioelectronics (2017-2021)
+ <p>Studied in Belarusian State University of Informatics and Radioelectronics (2017-2021)<br>
    Specialty: Infocommunication technologies (system of telecommunication) </p>
 </section>
+
+<section id="projects">
+    <h3  class="projects"> Projects </h3>   
+  <div class = "project">
+    <article>  
+    <h4> Museum 'Louvre'.</h4> 
+    <p>This web-page was made with HTML and CSS only. It has 6 thematic sections, which will be equipped with js and added adaptive. </p>
+    <a href="https://rolling-scopes-school.github.io/marinchik99-JSFEPRESCHOOL/museum/" target="_blank">
+        <img class= "museum" src = "photo/pr_mus.PNG" alt = 'progect museum'></img>
+    </a>
+    </article>
+
+    <article>
+    <h4>Vertical slider</h4>
+    <p> This project contains 5 images of cities and description to them. The material is presented as a vertical slider, which was done with HTML, CSS, JS. </p>
+    <a href="https://rolling-scopes-school.github.io/marinchik99-JSFEPRESCHOOL/js30-p1/" target="_blank">
+        <img class= "js30" src = "photo/js301.PNG" alt = 'progect js30'></img>
+    </a>
+    </article>
+  </div>
+</section>
+
+
+
+<section  id="code">
+<h3 class="code-title"> Sample code </h3>
+<pre><code>
+    function isIsogram(str){
+        let string = str.toLowerCase();
+        let arr = [];
+       for (let i=0; i < string.length; i++) {
+         (arr.includes(string[i])) ? false : arr.push(string[i]);
+       }
+       return true;
+    }
+</code></pre>
+</section>
+
 
 
 </main>
 <footer class="footer">
  <div class="git">
-<span><b>Ссылка на github: </b>  </span> <a href="https://github.com/marinchik99"> marinchik99 </a>  
+<img src="https://img.icons8.com/material-two-tone/50/000000/github.png"/>
+<span><b>GitHub: </b>  </span> <a href="https://github.com/marinchik99"> marinchik99 </a>  
 </div> 
-
+<div class = "logo"> 
+<p> 2021 год</p>    
 <img src="https://rs.school/images/rs_school_js.svg" alt="logo" class="name1"  >   
-<p> 2021 год</p>
 
+</div>
 </footer>
+
+
 
 </body>
 
